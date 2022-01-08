@@ -29,6 +29,38 @@
  *                                                    //  Ask her again.';
  */
 function willYouMarryMe(/* isPositiveAnswer */) {
+  // return new Promise(() => {
+  //   Promise.then(() => {
+  //     if (typeof isPositiveAnswer === 'boolean' && isPositiveAnswer) {
+  //       return 'Hooray!!! She said "Yes"!';
+  //     }
+  //     if (typeof isPositiveAnswer === 'boolean' && !isPositiveAnswer) {
+  //       return 'Oh no, she said "No';
+  //     }
+  //     throw 'Error: Wrong parameter is passed!';
+  //   });
+  //   Promise.catch((e) => {
+  //     if (typeof isPositiveAnswer !== 'boolean') {
+  //       return 'Error: Wrong parameter is passed!';
+  //     }
+  //   });
+
+  // if (typeof isPositiveAnswer === 'boolean') {
+  //   if (isPositiveAnswer) {
+  //     resolve(true);
+  //   } else {
+  //     resolve(false);
+  //   }
+  //   Promise.then(() => {
+  //     if (isPositiveAnswer) {
+  //       return 'Hooray!!! She said "Yes"!';
+  //     }
+  //     return 'Oh no, she said "No';
+  //   });
+  // } else {
+  //   reject();
+  // }
+  // });
   throw new Error('Not implemented');
 }
 
