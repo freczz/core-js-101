@@ -126,9 +126,8 @@ function repeatString(value, count) {
  *   'I like legends', 'end' => 'I like legs',
  *   'ABABAB','BA' => 'ABAB'
  */
-function removeFirstOccurrences(/* str, value */) {
-  // str.replace(value, '');
-  throw new Error('Not implemented');
+function removeFirstOccurrences(str, value) {
+  return str.replace(value, '');
 }
 
 /**
@@ -203,8 +202,9 @@ function extractEmails(str) {
  *             '└──────────┘\n'
  *
  */
-function getRectangleString(/* width, height */) {
-  throw new Error('Not implemented');
+function getRectangleString(width, height) {
+  const line = `│${' '.repeat(width - 2)}│\n`;
+  return `┌${'─'.repeat(width - 2)}┐\n${line.repeat(height - 2)}└${'─'.repeat(width - 2)}┘\n`;
 }
 
 
@@ -224,9 +224,8 @@ function getRectangleString(/* width, height */) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(/* str */) {
-  // const reg = /[a-z]/i;
-  throw new Error('Not implemented');
+function encodeToRot13(str) {
+  return str.replace(/[A-Z]/gi, (c) => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'['ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.indexOf(c)]);
 }
 
 /**
